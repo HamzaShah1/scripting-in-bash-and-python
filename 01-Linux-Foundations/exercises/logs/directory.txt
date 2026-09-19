@@ -1,0 +1,4 @@
+app-copy.log
+app.log
+directory.txt
+errors.log
