@@ -1,0 +1,36 @@
+INFO Application started
+INFO Application started
+INFO Application started
+INFO Connected to database
+ERROR Database connection failed
+INFO Retrying connection
+INFO Application started
+ERROR Database connection failed
+WARNING Database response slow
+INFO Application recovered
+INFO Application started
+INFO Connected to database
+ERROR Database connection failed
+INFO Retrying connection
+ERROR Database connection failed
+WARNING Database response slow
+INFO Application recovered
+INFO Application started
+INFO Connected to database
+ERROR Database connection failed
+INFO Retrying connection
+ERROR Database connection failed
+WARNING Database response slow
+INFO Application recovered
+ERROR Database connection failed
+ERROR Database connection failed
+INFO Application started
+ERROR Database connection failed
+WARNING Database response slow
+INFO Application recovered
+ERROR Database connection failed
+ERROR Database connection failed
+WARNING Database response slow
+INFO Application recovered
+ERROR Database connection failed
+ERROR Database connection failed
