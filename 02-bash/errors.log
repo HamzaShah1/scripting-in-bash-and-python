@@ -1,0 +1,20 @@
+INFO Application started
+ERROR Database failed
+INFO Retrying
+ERROR Connection timeout
+INFO Application started
+INFO Retrying
+INFO Recovered
+INFO RecoveredINFO Application started
+ERROR Database failed
+INFO Retrying
+ERROR Connection timeout
+INFO RecoveredINFO Application started
+ERROR Database failed
+INFO Retrying
+ERROR Connection timeout
+INFO RecoveredINFO Application started
+INFO Retrying
+INFO RecoveredINFO Application started
+INFO Retrying
+INFO Recovered

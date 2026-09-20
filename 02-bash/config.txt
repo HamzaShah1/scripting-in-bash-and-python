@@ -1,0 +1,4 @@
+environment=dev
+application=api
+region=eu-west-2
+database=dev-db
