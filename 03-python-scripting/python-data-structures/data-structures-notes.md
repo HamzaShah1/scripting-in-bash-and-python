@@ -39,3 +39,17 @@ name[0]
 
 
 
+========== List Comprehension vs Disctionary comprehension ===============
+for a list:
+servers = [
+    {"web": "server1"},
+    {"web": "server2"},
+    {"web": "server3"}
+    ] 
+new_list = [dictionary["web"] from dictionary in servers]
+
+Dictionary comprehentsion:
+{
+    KEY: VALUE
+    for ITEM in COLLECTION
+}
