@@ -105,7 +105,6 @@ def char_repeat(text):
 
 print(char_repeat("hamza"))
 
-'''
 
 def first_unique(text):
     char_counts = {}
@@ -118,4 +117,38 @@ def first_unique(text):
     return False
 
 print(first_unique("aabbcd"))
+
+
+# Given a list of strings, group together all strings that are anagrams of each other.
+
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+def anagrams(list_of_strings):
+    keys = {}
+    for text in list_of_strings:
+        key = "".join(sorted(text))
+        if key in keys:
+            keys[key].append(text)
+        else:
+            keys[key] = [text]
+    return keys
+
+print(anagrams(words))
+    
+'''
+
+# Q 1 Given a list of integers, return the first number that appears more than once.
+
+nums = [5, 3, 8, 3, 9, 5]
+seen = set()
+def is_seen(nums):
+    for num in nums:
+        if num in seen:
+            return num
+        else:
+            seen.add(num)
+    return seen
+
+print(is_seen(nums))
+
 
