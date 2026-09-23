@@ -135,7 +135,6 @@ def anagrams(list_of_strings):
 
 print(anagrams(words))
     
-'''
 
 # Q 1 Given a list of integers, return the first number that appears more than once.
 
@@ -151,4 +150,48 @@ def is_seen(nums):
 
 print(is_seen(nums))
 
+# Given a list of integers, return the number that appears most frequently.
+
+nums = [4, 2, 4, 7, 2, 4]
+
+def most_freq(nums):
+    num_freq = {}
+
+    for num in nums:
+        num_freq[num] = num_freq.get(num, 0) + 1
+    
+    highest_freq = 0
+    highest_count = 0
+
+    for num, freqs in num_freq.items():
+        if freqs > highest_count:
+            highest_count = freqs
+            highest_freq = num
+    return highest_freq
+
+print(most_freq(nums))
+'''
+
+# last hashmap question
+
+# Given a string, return the character that appears most frequently.
+
+s = "banana"
+
+def most_frequent_char(text):
+    char_freq = {}
+
+    for char in text:
+        char_freq[char] = char_freq.get(char, 0) + 1
+    
+    highest_freq = 0
+    highest_count = 0
+
+    for char, freq in char_freq.items():
+        if freq > highest_count:
+            highest_count = freq
+            highest_freq = char
+    return highest_freq
+
+print(most_frequent_char(s))
 
