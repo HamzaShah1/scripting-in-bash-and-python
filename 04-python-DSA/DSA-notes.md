@@ -20,3 +20,7 @@ text.replace() - replaces a string with another string
 "".join(["list", "of", "items"]) - join lists together with no space, do " " to join with a space. also the ites youre joining need to be strings
 
 .get() - get a value of a key in a dictionary and give a default value if it doesnt exist already
+
+
+enumerate() 
+you use enumerate when you want both the index and the value while looping through a list
