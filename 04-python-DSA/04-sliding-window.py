@@ -21,7 +21,7 @@ def max_sum(nums, k):
     return max_sum
 
 print("the max sum is", max_sum(nums, k))
-'''
+
 
 
 # variable size window sliding window question: the first type above was a fixed window size, next the window size isnt fixed.
@@ -51,6 +51,46 @@ def var_slide_window(text):
 
 print(var_slide_window(text))
 
+
+
+text = "pwwkewkjiehfkwjhfkjhwsefliuwyheuuuhuhhkufjshkdjfhskjfhsdfnsiekfrhaksjhfaawaaqqaweduiqw"
+
+def var_sliding_window(text):
+    seen = set()
+    left = 0
+    longest_length = 0
+    for right in range(len(text)):
+        while text[right] in seen:
+            seen.remove(text[left])
+            left +=1
+        seen.add(text[right])
+
+        window_length = right - left + 1
+        if window_length > longest_length:
+            longest_length = window_length
+    return longest_length
+
+print("longest unrepeated substring is: ", var_sliding_window(text))
+
+'''
+
+# sliding window 3 - frequenccy / count condition
+# look for things like: at least k times, frequency of..., no more thank k...
+
+# use a hash map + sliding window because we need character + count
+
+def freq_dict_window(text):
+    counts = {}
+    left = 0
+
+    for right in range(len(text)):
+        counts[text[right]] = counts.get(text[right, 0]) +1
+
+        while len(counts) > 2:
+            counts[text[left]] -= 1
+            if counts[text[left]] ==0:
+                del counts[text[left]]
+            left += 1
 
 
 
