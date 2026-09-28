@@ -79,18 +79,29 @@ print("longest unrepeated substring is: ", var_sliding_window(text))
 
 # use a hash map + sliding window because we need character + count
 
+text = "eceba"
+
 def freq_dict_window(text):
     counts = {}
     left = 0
+    longest_length = 0
 
     for right in range(len(text)):
-        counts[text[right]] = counts.get(text[right, 0]) +1
+        counts[text[right]] = counts.get(text[right], 0) +1
 
         while len(counts) > 2:
             counts[text[left]] -= 1
             if counts[text[left]] ==0:
                 del counts[text[left]]
             left += 1
+        window_length = right - left + 1
+        if window_length > longest_length:
+            longest_length = window_length
+
+    return longest_length
+
+
+print(freq_dict_window(text))
 
 
 
