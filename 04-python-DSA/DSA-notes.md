@@ -24,3 +24,11 @@ text.replace() - replaces a string with another string
 
 enumerate() 
 you use enumerate when you want both the index and the value while looping through a list
+
+
+
+stack operations:
+
+stack.append(x) - push
+stack.pop() - remove top
+stack[-1] - look at top without removing
