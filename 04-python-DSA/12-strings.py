@@ -98,7 +98,6 @@ def longest_common_prefix(strings):
         return "".join(longest_prefix)
 
 # length of last word:
-'''
 
 
 s = "Hello World"
@@ -114,3 +113,27 @@ def length_last(string):
     return count
 
 print(length_last(s))
+
+'''
+
+#isomorphic strings:
+s = "egg"
+t = "add"
+
+def is_isomorphic():
+    dict1 = {}
+    dict2 = {}
+
+    for i in range(len(s)):
+        if s[i] in dict1 and dict1[s[i]] != t[i]:
+            return False
+        if t[i] in dict2 and dict2[t[i]] != s[i]:
+            return False
+        
+        dict1[s[i]] = s[i]
+        dict2[t[i]] = t[i]
+    return True
+
+
+
+    
