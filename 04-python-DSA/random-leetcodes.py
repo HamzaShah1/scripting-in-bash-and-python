@@ -100,3 +100,24 @@ def smallest_num(nums):
         if num < smallest:
             smallest = num
     return smallest
+
+# Given a string, return True if it is a palindrome, and False otherwise.
+
+s = "racecar"
+
+def is_palindrome(string):
+    left =0
+    right = len(string) -1
+
+    while left < right:
+        if string[left] == string[right]:
+            left +=1
+            right -=1
+        else:
+            return False
+    return True
+
+# Given a string containing only the characters: ( ) [ ] { } return True if the brackets are properly matched and nested, otherwise return False.
+
+def valid_brackets(s):
+    
